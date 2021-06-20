@@ -1,0 +1,8 @@
+<header>
+        <a href="#" class="logo">SaiGon Bakery</a>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Color</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
