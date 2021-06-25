@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255,255,255, 0.1)), url(https://st3.depositphotos.com/13324256/18401/i/600/depositphotos_184010228-stock-photo-cropped-shot-chef-clapping-ahnds.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #2E8B57;
+    font-size: 20px;
+    text-shadow: 1px 0 black, 0 -1px black;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FF4500;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+.row1{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col1{
+    flex-basis: 50%;
+}
+
+.col1 a{
+    margin-top: 20px;
+}
+
+.col2{
+    flex-basis: 50%;
+}
+
+.col1 h1{
+    color: #2E8B57;
+    font-size: 50px;
+    text-shadow: 2px 0 black, 0 1px black;
+}
+
+.col1 p{
+    color:white;
+    font-size: 13px;
+    line-height: 15px;
+    text-shadow: 1px 0 black, 0 -1px black;
+}
+
+.col1 a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.col1 a:hover{
+    border: 1px solid #FF4500;
+    background: #FF4500;
+    transition: 1s;
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition:transform 0.5s;
+}
+
+.card1{
+    background-image: url(http://chefjob.vn/wp-content/uploads/2018/08/banh-mi-thit-sai-gon.jpg);
+}
+.card2{
+    background-image: url(https://w0.peakpx.com/wallpaper/315/359/HD-wallpaper-muffin-pastry-dessert.jpg);
+}
+.card3{
+    background-image: url(https://beyondfrosting.com/wp-content/uploads/2019/01/Chocolate-Cake-Recipe-017.jpg);
+}
+.card4{
+    background-image: url(https://vn-test-11.slatic.net/p/98e07cccae87cbfa591dd124ff94c4b2.jpg_720x720q80.jpg_.webps);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h4{
+    color: white;
+    text-shadow: 0 0 5px #999;
+    text-shadow: -1px 0 black, 0 1px black;
+}
+
+.navbar .fas{
+    display: none;
+}
+
+.navbar .far{
+    display: none;
+}
+
+@media(max-width: 700px){
+    nav ul li{
+        display: block;
+    }
+    nav{
+        position: absolute;
+        background: #FF4500;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .navbar .far{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navbar .fas{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav ul{
+        padding :30px;
+    }
+
+}
+
+.ads h1{
+    color: white;
+    font-size: 40px;
+    text-shadow: 3px 0 black, 0 3px black;
+}
+
+.qc .ads{
+    margin: 100px auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255,255,255, 0.1)), url(https://i.gifer.com/KlMt.gif);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hot-seller{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hot-seller h1{
+    color: #2E8B57;
+    font-size: 40px;
+}
+
+.hot-seller-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hot-seller img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(255, 69, 0, 0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.deal{
+    width: 80%;
+    margin: auto;
+}
+
+.row2{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.deal h1{
+    color: #2E8B57;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.deal .row2{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.deal-col1{
+    flex-basis: 50%;
+}
+
+.deal-col2{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.deal-col2 img{
+    display: block;
+    width: 400px;
+    height: 300px;
+}
+
+.chung{
+    margin-left: 20%;
+}
+
+.rieng{
+    text-align: right;
+}
+
+.deal-col1 h3{
+    color: #2E8B57;
+    font-size: 30px;
+}
+
+.deal-col1 p{
+    color:black;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.deal-col1 a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.deal-col1 a:hover{
+    border: 1px solid #FF4500;
+    background: #FF4500;
+    transition: 1s;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.icons .fab{
+    color:#2E8B57;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fab-heart{
+    color: #2E8B57;
+}
